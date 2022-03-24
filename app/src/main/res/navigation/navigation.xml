@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/layarSatu">
+    <fragment
+        android:id="@+id/layarTiga"
+        android:name="com.binar.challenge_chapter_tiga.LayarTiga"
+        android:label="fragment_layar_tiga"
+        tools:layout="@layout/fragment_layar_tiga" >
+        <action
+            android:id="@+id/action_layarTiga_to_layarEmpat"
+            app:destination="@id/layarEmpat"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <argument
+            android:name="nama"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/layarDua"
+        android:name="com.binar.challenge_chapter_tiga.LayarDua"
+        android:label="fragment_layar_dua"
+        tools:layout="@layout/fragment_layar_dua" >
+        <action
+            android:id="@+id/action_layarDua_to_layarTiga"
+            app:destination="@id/layarTiga"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/layarEmpat"
+        android:name="com.binar.challenge_chapter_tiga.LayarEmpat"
+        android:label="fragment_layar_empat"
+        tools:layout="@layout/fragment_layar_empat" >
+        <action
+            android:id="@+id/action_layarEmpat_to_layarTiga"
+            app:destination="@id/layarTiga"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/layarSatu"
+        android:name="com.binar.challenge_chapter_tiga.LayarSatu"
+        android:label="fragment_layar_satu"
+        tools:layout="@layout/fragment_layar_satu" >
+        <action
+            android:id="@+id/action_layarSatu_to_layarDua"
+            app:destination="@id/layarDua"
+
+
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+</navigation>

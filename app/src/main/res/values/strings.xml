@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Challenge_Chapter_Tiga</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_screen_3">Go To Screen 3</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="screen_2">Screen 2</string>
+    <string name="go_to_screen_4">Go To Screen 4</string>
+    <string name="screen_3">Screen 3</string>
+    <string name="back_to_screen_3">Back To Screen 3</string>
+    <string name="masukkan_pekerjaan">Masukkan Pekerjaan</string>
+    <string name="masukkan_alamat">Masukkan Alamat</string>
+    <string name="masukkan_usia">Masukkan Usia</string>
+    <string name="screen_4">Screen 4</string>
+</resources>
